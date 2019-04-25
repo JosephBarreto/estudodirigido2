@@ -1,39 +1,29 @@
 <?php
-
 print("Informe o primeiro numero:\n");
 $n1 = fgets(STDIN);
 print("Informe o segundo numero:\n");
 $n2 = fgets(STDIN);
 print("Informe o terceiro numero:\n");
 $n3 = fgets(STDIN);
-
-
-
-    print("$n1\n$n2\n$n3");
-
-    if($n3 > $n2){
-
-    $aux = $n3;
-    $n3 = $n2;
-    $n2 = $aux;
-
+    if($n3 >= $n2 and $n2 >= $n1){
+        print  "a ordem é $n3, $n2, $n1";
     }
-        
-    if($n2 > $n1){
-        
-        $aux = $n2;
-        $n2 = $n1;
-        $n1 = $aux;
-
+    elseif($n2 >= $n1 and $n1 >= $n3){
+        print  "a ordem é $n2, $n1, $n3";
     }
-
-    if($n3 > $n2){
-        $aux = $n3;
-        $n3 = $n2;
-        $n2 = $aux;
+    elseif($n1 >= $n3 and $n3 >= $n2){
+        print  "a ordem é $n1, $n3, $n2";
     }
-
-    print("ordem decrecente\n");
-    print("$n1\n$n2\n$n3\n");
-
-?>
+    elseif($n1 >= $n2 and $n2 >= $n3){
+        print  "a ordem é $n1, $n2, $n3";
+    }
+    elseif($n3 >= $n1 and $n1 >= $n2){
+        print  "a ordem é $n3, $n1, $n2";
+    }
+    elseif($n2 >= $n3 and $n3 >= $n1){
+        print  "a ordem é $n2, $n3, $n1";
+    }
+    else{
+        print"nao sei como mas vc ferrou o sistema..."
+    }
+    
