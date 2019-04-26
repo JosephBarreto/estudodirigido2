@@ -1,5 +1,5 @@
 <?php
-print"digite um numero entre 0 e 1000";
+print"digite um numero entre 0 e 1000:";
 $num = (int) fgets(STDIN);
 $centenas  = floor($num / 100);
 $dezenas = floor(($num%100) / 10);
